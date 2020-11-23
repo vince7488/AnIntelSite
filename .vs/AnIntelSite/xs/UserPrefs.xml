@@ -1,19 +1,25 @@
 ﻿<Properties StartupConfiguration="{7EE27E38-2D18-4C98-8431-B784E1F70163}|Default">
-  <MonoDevelop.Ide.ItemProperties.websiteclasses FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="websiteclasses/Projects.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Projects/List.cshtml.cs">
     <Files>
-      <File FileName="websiteclasses/Projects.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="27" Column="72" />
+      <File FileName="Pages/Projects/List.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Projects/List.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnIntelSite" expanded="True">
             <Node name="AnIntelSite" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Projects" expanded="True">
+                  <Node name="List.cshtml" expanded="True">
+                    <Node name="List.cshtml.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
-            <Node name="websiteclasses" expanded="True">
-              <Node name="Projects.cs" selected="True" />
-            </Node>
+            <Node name="websiteclasses" expanded="True" />
+            <Node name="WebsiteData" expanded="True" />
           </Node>
         </State>
       </Pad>
