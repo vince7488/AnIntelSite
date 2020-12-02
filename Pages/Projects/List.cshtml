@@ -6,4 +6,23 @@
 
 <h1>Projects</h1>
 
-@Model.ProjectsContent
+<div>@Model.ProjectsContent</div>
+
+<div class="table">
+    @foreach(var showProjects in Model.GetAllProjects)
+    {
+    <div class="table-row" id="ShocNProject_@showProjects.Id">
+        <div class="table-cell">
+            @showProjects.ProjectName
+        </div>
+        <div class="table-cell">
+            @showProjects.ProjectDesc
+        </div>
+        <div class="table-cell">
+            <span class="clearance @showProjects.PType">@showProjects.PType</span> 
+        </div>
+    </div>
+        
+    }
+
+</div>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
+using websiteclasses;
 using WebsiteData;
 
 namespace AnIntelSite.Pages.Projects
@@ -17,6 +18,8 @@ namespace AnIntelSite.Pages.Projects
 
         public string ProjectsContent { get; set; }
 
+        public IEnumerable<websiteclasses.Projects> GetAllProjects { get; set; }
+
         public ListModel(IConfiguration config,
                          IProjectData projectData)
         {
@@ -27,6 +30,7 @@ namespace AnIntelSite.Pages.Projects
         public void OnGet()
         {
             ProjectsContent = config["ProjectsContent"];
+            GetAllProjects = projectData.GetAll();
         }
     }
 }
