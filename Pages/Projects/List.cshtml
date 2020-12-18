@@ -8,17 +8,30 @@
 
 <div>@Model.ProjectsContent</div>
 
-<div class="table">
+<div class="container">
+    <div class="row justify-content-center">
+        <form method="get" class="col-sm-6">
+            <div class="input-group mb-3">
+                <input type="search" class="form-control" id="filterString" name="filterString" placeholder="Filter Projects" value="" aria-label="Filter" aria-describedby="Filter projects by name">
+                <button type="submit" class="btn btn-outline-primary" id="filterBtn">
+                    <i class="fas fa-filter"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
     @foreach(var showProjects in Model.GetAllProjects)
     {
-    <div class="table-row" id="ShocNProject_@showProjects.Id">
-        <div class="table-cell">
+    <div class="row justify-content-between" id="ShocNProject_@showProjects.Id">
+        <div class="col-sm-3">
             @showProjects.ProjectName
         </div>
-        <div class="table-cell">
+        <div class="col-sm-4">
             @showProjects.ProjectDesc
         </div>
-        <div class="table-cell">
+        <div class="col-sm-3">
             <span class="clearance @showProjects.PType">@showProjects.PType</span> 
         </div>
     </div>

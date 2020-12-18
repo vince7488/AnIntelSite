@@ -27,10 +27,10 @@ namespace AnIntelSite.Pages.Projects
             this.projectData = projectData;
         }
 
-        public void OnGet()
+        public void OnGet(string filterString)
         {
             ProjectsContent = config["ProjectsContent"];
-            GetAllProjects = projectData.GetAll();
+            GetAllProjects = projectData.FilterProjects(filterString);
         }
     }
 }

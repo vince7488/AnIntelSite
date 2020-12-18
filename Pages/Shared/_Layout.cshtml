@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <title>@ViewData["Title"] - Your Military Site by V.M.</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.9.0/css/all.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
@@ -18,7 +19,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
@@ -33,7 +34,18 @@
                             <a class="nav-link text-dark" href="#!">Contact</a>
                         </li>
                     </ul>
+                    <div class="flex-grow-0">
+                        <form method="get">
+                            <div class="input-group mb-3">
+                                <input type="search" class="form-control" placeholder="Start Search&hellip;" value="" aria-label="Search" aria-describedby="Search Textbox">
+                                <button class="btn btn-outline-primary" type="button" id="SearchBtn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+                
             </div>
         </nav>
     </header>

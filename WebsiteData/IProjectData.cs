@@ -8,7 +8,7 @@ namespace WebsiteData
 {
     public interface IProjectData
     {
-        IEnumerable<Projects> GetAll();
+        IEnumerable<Projects> FilterProjects(string filterString);
     }
 
     public class InMemoryProjectData : IProjectData
@@ -26,9 +26,12 @@ namespace WebsiteData
             };
         }
 
-        IEnumerable<Projects> IProjectData.GetAll()
+        IEnumerable<Projects> IProjectData.FilterProjects(string filterString)
         {
             return from p in projects
+                   let projectNameUpper = p.ProjectName.ToUpper()
+                   let projectDescUpper = p.ProjectDesc.ToUpper()
+                   where string.IsNullOrEmpty(filterString) || projectNameUpper.Contains(filterString.ToUpper()) || projectDescUpper.Contains(filterString.ToUpper())
                    orderby p.ProjectName
                    select p;
         }
