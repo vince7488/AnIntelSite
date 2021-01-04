@@ -20,6 +20,10 @@ namespace AnIntelSite.Pages.Projects
 
         public IEnumerable<websiteclasses.Projects> GetAllProjects { get; set; }
 
+        //creating an Output model for filterString
+        [BindProperty(SupportsGet = true)]
+        public string FilterString { get; set; }
+
         public ListModel(IConfiguration config,
                          IProjectData projectData)
         {
@@ -30,7 +34,7 @@ namespace AnIntelSite.Pages.Projects
         public void OnGet(string filterString)
         {
             ProjectsContent = config["ProjectsContent"];
-            GetAllProjects = projectData.FilterProjects(filterString);
+            GetAllProjects = projectData.FilterProjects(FilterString);
         }
     }
 }
