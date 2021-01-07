@@ -1,26 +1,18 @@
 ﻿<Properties StartupConfiguration="{7EE27E38-2D18-4C98-8431-B784E1F70163}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
-    <Files>
-      <File FileName="WebsiteData/IProjectData.cs" Line="34" Column="166" />
-      <File FileName="Pages/Projects/List.cshtml.cs" />
-      <File FileName="Pages/Projects/List.cshtml" />
-      <File FileName=".gitignore" Line="1" Column="4" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnIntelSite" expanded="True">
-            <Node name="AnIntelSite" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Projects" expanded="True">
-                  <Node name="List.cshtml" expanded="True" />
-                </Node>
-                <Node name="Shared" expanded="True" />
+            <Node name="AnIntelSite" expanded="True" />
+            <Node name="WebsiteClasses.Core" expanded="True" />
+            <Node name="WebsiteData" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
               </Node>
-              <Node name=".gitignore" selected="True" />
+              <Node name="IProjectData.cs" selected="True" />
             </Node>
-            <Node name="websiteclasses" expanded="True" />
-            <Node name="WebsiteData" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -28,9 +20,14 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.AnIntelSite PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>websiteclasses/WebsiteClasses.Core.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <AuthorInfo Name="Vernard Mercader" Email="vmercader.ctr@usaf.mil" Copyright="USAF - ShOC-N - Department of Defense" Company="Department of Defense" Trademark="" />
 </Properties>

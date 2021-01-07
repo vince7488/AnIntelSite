@@ -1,4 +1,4 @@
-﻿namespace websiteclasses
+﻿namespace WebsiteClasses.Core
 {
     public enum ProjectType
     {

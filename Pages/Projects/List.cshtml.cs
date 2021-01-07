@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
-using websiteclasses;
+using WebsiteClasses.Core;
 using WebsiteData;
 
 namespace AnIntelSite.Pages.Projects
@@ -18,7 +18,7 @@ namespace AnIntelSite.Pages.Projects
 
         public string ProjectsContent { get; set; }
 
-        public IEnumerable<websiteclasses.Projects> GetAllProjects { get; set; }
+        public IEnumerable<WebsiteClasses.Core.Projects> GetAllProjects { get; set; }
 
         //creating an Output model for filterString
         [BindProperty(SupportsGet = true)]

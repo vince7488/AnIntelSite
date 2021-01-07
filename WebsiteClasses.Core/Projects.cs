@@ -1,5 +1,4 @@
-﻿using System;
-namespace websiteclasses
+﻿namespace WebsiteClasses.Core
 {
 
     public class Projects
